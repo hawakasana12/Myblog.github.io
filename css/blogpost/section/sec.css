@@ -1,0 +1,68 @@
+#secid{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 25vh 30vh 60vh 40vh; 
+    grid-template-areas:
+    "abot"
+    "author"
+    "arch"
+    "pf";
+    justify-items: start;    
+    
+}
+
+
+.abt{
+    grid-area: abot;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow-y: auto;
+    
+   
+}
+
+.authr{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+
+}
+
+.authrdetail{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: flex-start;
+}
+
+.authredu{
+    font-size: 15px;
+}
+
+
+.archives{
+    grid-area: arch;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    width: 300px;
+    
+}
+
+.prof{
+    grid-area: pf;
+    
+}
+
+.abtcontent{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+dd{
+    font-size: 15px;
+
+}

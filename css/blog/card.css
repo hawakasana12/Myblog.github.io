@@ -1,0 +1,49 @@
+#card{
+    border-radius: 10%;
+}
+
+
+#card > .blogtype{
+    font-size: 20px;
+}
+.blogtype{
+    position:relative;
+    top: 10px;
+    left: 20px;
+    color: blueviolet;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.blogtitle{
+    position:relative;
+    top:3px;
+    left:20px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.blogdate{
+    position:relative;
+    bottom: 15px;
+    left: 20px;
+    font-size: medium;
+    font-weight: bold;
+    color: #8a8685;
+}
+
+.discr{
+    position:absolute;
+    bottom:30px;
+    left:20px;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.blogcont{
+    position:absolute;
+    bottom: 20px;
+    left:20px;
+
+}

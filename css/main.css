@@ -1,0 +1,166 @@
+@import "blog/card.css";
+@import "blog/blog.css";
+@import "blog/search.css";
+
+
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.content {
+    display: grid;
+    width: 100vw;
+    height: 300vh;
+    margin:auto;
+    
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 30vh 20vh 220vh 30vh ;
+    grid-gap: 15px;
+    grid-template-areas:
+    "head head"
+    "nav nav"
+    "blog blog"
+    "ft ft";
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#header{
+    flex-direction: row;
+    grid-area: head;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#navid{
+    grid-area: nav;
+    flex-direction: row;
+    background-color: bisque;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#blog{
+    grid-area: blog;
+    margin:  20px 0px;
+    flex-direction: column;
+    flex-flow:row wrap;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: auto;
+    justify-content: space-evenly;
+    
+}
+
+#footer{
+    top:2px;
+    grid-area: ft;
+    flex-direction: column;
+    background-color: rgb(236, 236, 241);
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+
+.hbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+justify-content: space-between;
+}
+
+
+
+
+
+#title{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+#fa fa-search{
+    width: 200px;
+    height: 100px;
+}
+
+
+.footnote{
+    display: flex;
+    font-size: 15px;
+}
+
+p{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (mid-width: 600px) and (max-width: 1100px){
+    .content {
+        display: grid;
+        width: 100vw;
+        height: 200vh;
+        margin:auto;
+        
+        grid-template-columns: 45vw 45vw;
+        grid-template-rows: repeat(20,1fr) ;
+        grid-gap: 15px;
+        grid-template-areas:
+        "head head"
+        "head head"
+        "nav nav"
+        "blog blog"
+        "blog blog"
+        "blog blog"
+        "blog blog"
+        "blog blog"
+        "blog blog"
+        "blog blog"
+        "blog blog"
+        "blog blog"
+        "blog blog"
+        "blog blog"
+        "blog blog"
+        "blog blog"
+        "blog blog"
+        "blog blog"
+        "ft ft"
+        "ft ft";;
+        justify-content: center;
+    }
+}
+
+
+
+@media (min-width:1101px){
+    .content {
+        display: grid;
+        width: 100vw;
+        height: 200vh;
+        margin:auto;
+        
+        grid-template-columns: 45vw 45vw;
+        grid-template-rows: 20vh 10vh 150vh 20vh ;
+        grid-gap: 15px;
+        grid-template-areas:
+        "head head"
+        "nav nav"
+        "blog blog"
+        "ft ft";;
+        justify-content: center;
+    }
+}
